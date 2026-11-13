@@ -343,8 +343,8 @@ services:
       LOGFLARE_SINGLE_TENANT: true
       LOGFLARE_SUPABASE_MODE: true
       LOGFLARE_MIN_CLUSTER_SIZE: 1
-      LOGFLARE_LOGGER_BACKEND: local
-      DATADOG_ENABLED: "false"
+    extra_hosts:
+      - "://datadoghq.com.0.0.1"
 
 
       # Comment variables to use Big Query backend for analytics
